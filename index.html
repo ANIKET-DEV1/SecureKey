@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PS-M/Login</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+  <div class="container">
+    <div class="form-box" id="formBox">
+      <h2 id="formTitle">Login</h2>
+      <form id="authForm" onsubmit="login(event)">
+        
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required >
+        </div>
+        
+       <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required >
+        </div>
+        
+        <p id="error"></p>
+        <button type="submit" class="btn">Submit</button>
+        <p class="toggle-text">
+          <span id="toggleText">Don't have an account?</span>
+          <a href="register.html" id="toggleBtn">Register</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="login.js"></script>
+</body>
+</html>
