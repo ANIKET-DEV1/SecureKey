@@ -86,7 +86,7 @@ window.deletePassword = async function (docId) {
   try {
     await deleteDoc(doc(db, "users", user.uid, "passwords", docId));
    
-    loadPasswords(); 
+        window.location.href ="home.html";
   } catch (error) {
     console.error("Error deleting password:", error);
   }
